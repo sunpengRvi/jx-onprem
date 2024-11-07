@@ -6,7 +6,6 @@ environments:
 namespace: tekton-pipelines
 repositories:
 - name: cdf
-  #url: https://cdfoundation.github.io/tekton-helm-chart
   url: https://sunpengrvi.github.io/tekton-helm-chart-stagingcn/
 releases:
 - chart: cdf/tekton-pipeline
