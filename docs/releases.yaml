@@ -11,7 +11,7 @@
     - name: bucketrepo
       url: http://bucketrepo-jx.cn1.wrstudio.cloud
     - name: hook
-      url: http://c2f5-114-252-190-85.ngrok-free.app/hook
+      url: http://d657-114-252-190-85.ngrok-free.app/hook
     lastDeployed: "2024-11-06T05:58:20Z"
     name: jxboot-helmfile-resources
     releaseName: jxboot-helmfile-resources
