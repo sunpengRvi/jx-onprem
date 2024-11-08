@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         sunpengRvi/demo-jx3-golang-http: true
+        sunpengRvi/demo-jx3-golang-http-2: true
         sunpengRvi/jx-onprem: true
         sunpengRvi/jxtest-golang-http: true
     plank: {}
@@ -22,6 +23,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         sunpengRvi/demo-jx3-golang-http: merge
+        sunpengRvi/demo-jx3-golang-http-2: merge
         sunpengRvi/jx-onprem: merge
         sunpengRvi/jxtest-golang-http: merge
       queries:
@@ -35,6 +37,7 @@ data:
         - needs-rebase
         repos:
         - sunpengRvi/jx-onprem
+        - sunpengRvi/demo-jx3-golang-http-2
         - sunpengRvi/demo-jx3-golang-http
         - sunpengRvi/jxtest-golang-http
       - labels:
@@ -47,6 +50,7 @@ data:
         - needs-rebase
         repos:
         - sunpengRvi/jx-onprem
+        - sunpengRvi/demo-jx3-golang-http-2
         - sunpengRvi/demo-jx3-golang-http
         - sunpengRvi/jxtest-golang-http
       target_url: http://lighthouse-jx.cn1.wrstudio.cloud/merge/status
