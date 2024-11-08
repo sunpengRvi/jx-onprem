@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: sunpengRvi
+    provider: github
+    repository: demo-jx3-golang-http
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: sunpengrvi-demo-jx3-golang-http
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/sunpengRvi/demo-jx3-golang-http.git
+  org: sunpengRvi
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: demo-jx3-golang-http
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/sunpengRvi/demo-jx3-golang-http

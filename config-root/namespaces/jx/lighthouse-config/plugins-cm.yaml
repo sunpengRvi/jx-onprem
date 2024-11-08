@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - sunpengRvi/demo-jx3-golang-http
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - sunpengRvi/jxtest-golang-http
       require_self_approval: true
     cat: {}
@@ -20,6 +24,11 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      sunpengRvi/demo-jx3-golang-http:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
       sunpengRvi/jx-onprem:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -34,6 +43,20 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      sunpengRvi/demo-jx3-golang-http:
+      - approve
+      - assign
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - cat
+      - dog
+      - pony
       sunpengRvi/jx-onprem:
       - config-updater
       - approve
@@ -74,6 +97,9 @@ data:
     triggers:
     - repos:
       - sunpengRvi/jx-onprem
+      trusted_org: sunpengRvi
+    - repos:
+      - sunpengRvi/demo-jx3-golang-http
       trusted_org: sunpengRvi
     - repos:
       - sunpengRvi/jxtest-golang-http
