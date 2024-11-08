@@ -1,0 +1,3 @@
+ingress:
+  customHosts:
+    hook: "c2f5-114-252-190-85.ngrok-free.app"
