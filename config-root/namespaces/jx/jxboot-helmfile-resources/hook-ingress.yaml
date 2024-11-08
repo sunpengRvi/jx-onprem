@@ -20,4 +20,4 @@ spec:
             port:
               number: 80
         path: "/hook"
-    host: hook-jx.cn1.wrstudio.cloud
+    host: c2f5-114-252-190-85.ngrok-free.app
