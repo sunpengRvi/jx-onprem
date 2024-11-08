@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: demo-jx3-golang-http
+    - name: demo-jx3-golang-http-2
     - name: jxtest-golang-http
     scheduler: in-repo
   slack:
